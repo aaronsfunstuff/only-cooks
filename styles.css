@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff7f50;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url('https://www.sftravel.com/sites/default/files/styles/hero/public/2023-10/annette.chew-Instagram-2576-ig-18022154191346379_0.jpg.webp?itok=UCd1jfSw');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.primary-btn {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.primary-btn:hover {
+    background-color: #ff5733;
+}
+
+.featured-chefs {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.featured-chefs h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.chef-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.chef-card:hover {
+    transform: translateY(-10px);
+}
+
+.chef-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.chef-card:hover img {
+    opacity: 0.9;
+}
+
+.chef-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.chef-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.chef-info p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.secondary-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #555;
+}
+
+.popular-recipes {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.popular-recipes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #444;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
