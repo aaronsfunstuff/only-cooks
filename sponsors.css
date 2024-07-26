@@ -1,0 +1,138 @@
+.sponsors {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 60px 0;
+    color: #333;
+}
+
+.sponsors .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.sponsors h1 {
+    color: #3a6a40; /* Matcha green for headings */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.sponsors p {
+    color: #555;
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+}
+
+.sponsor-carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.carousel-item h2 {
+    color: #3a6a40; /* Matcha green for headings */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.btn.primary-btn {
+    background-color: #3a6a40; /* Matcha green button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.primary-btn:hover {
+    background-color: #2f5a34;
+}
+
+.hidden {
+    display: none;
+}
+
+#more-sponsors {
+    margin-top: 40px;
+}
+
+.sponsor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sponsor-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.sponsor-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.sponsor-card h3 {
+    color: #3a6a40; /* Matcha green for headings */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.sponsor-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 200px;
+        padding: 15px;
+    }
+
+    .sponsor-card {
+        width: 100%;
+        max-width: 200px;
+        padding: 15px;
+    }
+}
