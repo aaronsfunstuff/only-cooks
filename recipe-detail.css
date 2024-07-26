@@ -112,4 +112,120 @@
     line-height: 1.6;
     margin-top: 10px;
 }
+/* Nutrition facts section */
+.recipe-detail .nutrition-facts {
+    margin-bottom: 40px;
+}
+
+.recipe-detail .nutrition-facts h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.recipe-detail .nutrition-facts table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: #666;
+    text-align: left;
+}
+
+.recipe-detail .nutrition-facts table th, 
+.recipe-detail .nutrition-facts table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.recipe-detail .nutrition-facts table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Recipe author and social links */
+.recipe-detail .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.recipe-detail .author-info img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.recipe-detail .author-info .author-name {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.recipe-detail .author-info .author-social a {
+    color: #666;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.recipe-detail .author-info .author-social a:hover {
+    color: #333;
+}
+
+/* Subscribe section */
+.recipe-detail .subscribe-section {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+}
+
+.recipe-detail .subscribe-section h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.recipe-detail .subscribe-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.recipe-detail .subscribe-section .subscribe-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #ff6347;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-detail .subscribe-section .subscribe-btn:hover {
+    background-color: #e55337;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .recipe-detail h1 {
+        font-size: 2rem;
+    }
+
+    .recipe-detail .recipe-meta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-detail .recipe-meta p {
+        margin: 10px 0;
+    }
+
+    .recipe-detail .ingredients ul, 
+    .recipe-detail .instructions ol {
+        padding-left: 15px;
+    }
+}
 
