@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors - Cookstars</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="https://www.aliasworlds.com/games/cooking-stars/logo-cs.png" alt="Cookstars Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chefs.html">Chefs</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="subscribe-btn">Subscribe</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sponsors">
+            <div class="container">
+                <h1>Meet Our Sponsors</h1>
+                <p>Our sponsors are the secret ingredients to our success! Check out our fantastic partners below.</p>
+                <div class="sponsor-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-item">
+                            <img src="https://static.wixstatic.com/media/f45e43_7cc3eec7cf37410b80e586d3677eacd8~mv2.png/v1/fill/w_360,h_304,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f45e43_7cc3eec7cf37410b80e586d3677eacd8~mv2.png" alt="Sponsor 1">
+                            <h2>Chef's Choice</h2>
+                            <p>Your go-to source for top-quality kitchen gadgets!</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Oh8WRaZseVnqoNJVtuCqaxZXKkZNCTNoxQ&s" alt="Sponsor 2">
+                            <h2>Global Spices</h2>
+                            <p>Bringing exotic spices from around the world to your kitchen.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc3Abjk6P7DAnrYhMTa_Jtney-L0jzJpY4Pw&s" alt="Sponsor 3">
+                            <h2>Fresh Farms</h2>
+                            <p>Providing the freshest produce for the best recipes.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <button class="btn primary-btn" onclick="showMoreSponsors()">See More Sponsors</button>
+                <div id="more-sponsors" class="hidden">
+                    <h2>Additional Sponsors</h2>
+                    <div class="sponsor-list">
+                        <div class="sponsor-card">
+                            <img src="https://media.premiergroup.net/category/gourmet-tools-and-utensils.jpg" alt="Sponsor 4">
+                            <h3>Gourmet Tools</h3>
+                            <p>High-end culinary tools for the modern chef.</p>
+                        </div>
+                        <div class="sponsor-card">
+                            <img src="https://mesugatra.com/cdn/shop/collections/Organic_Harvest_logo-01.jpg?v=1648547412" alt="Sponsor 5">
+                            <h3>Organic Harvest</h3>
+                            <p>Organic ingredients for a healthy and delicious meal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p>&copy; 2024 Cookstars. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        function showMoreSponsors() {
+            document.getElementById('more-sponsors').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
